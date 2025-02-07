@@ -1,6 +1,7 @@
-# 🚀 Java ONNX Embedding & RAG Engine
+# 🚀 Java Sentence-Bert Embedding & RAG Engine
 
 Welcome to the **Java ONNX Embedding & Retrieval-Augmented Generation (RAG) Engine**! This project showcases how to integrate modern AI models with legacy Java systems using **ONNX**. While most AI development today happens in **Python**, many enterprises still rely heavily on Java ecosystems. This solution bridges that gap, allowing seamless **embedding generation** and **document retrieval** using popular transformer models.
+This code/library was first developed for the InfiniteStack of SciCrop and is now open-sourced as a SciCrop Academy initiative.
 
 ---
 
@@ -37,8 +38,8 @@ Welcome to the **Java ONNX Embedding & Retrieval-Augmented Generation (RAG) Engi
 ### 2. 📚 Cloning the Repository
 ```bash
 # Clone the project
-$ git clone https://github.com/your-repo/java-onnx-rag.git
-$ cd java-onnx-rag
+$ git clone https://github.com/Scicrop/javaSentenceBertEmbedding
+$ cd javaSentenceBertEmbedding
 ```
 
 ### 3. 🔢 Installing Dependencies
@@ -75,13 +76,13 @@ $ mvn clean install
 Place your text files in a directory (e.g., `/tmp/texts/`). Then run:
 ```bash
 # For BERT embeddings
-$ java -jar target/BertDataEmbedd.jar /tmp/texts/
+$ java -jar target/BertDataEmbedd.jar /tmp/embeddings/ /opt/infinitestack/onnx_bert/
 
 # For Sentence-BERT embeddings
-$ java -jar target/MpnetDataEmbedd.jar /tmp/texts/ /opt/infinitestack/onnx_mpnet/
+$ java -jar target/MpnetDataEmbedd.jar /tmp/embeddings/ /opt/infinitestack/onnx_mpnet/
 ```
 
-Embeddings will be saved as `.json` files in `/tmp/embeddings/`.
+In the above commands embeddings will be saved as `.json` files in `/tmp/embeddings/`.
 
 ---
 

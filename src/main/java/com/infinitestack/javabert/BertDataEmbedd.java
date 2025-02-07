@@ -48,7 +48,7 @@ public class BertDataEmbedd {
             EmbeddingJson embeddingJson = new EmbeddingJson(fileName, embedding);
 
             // Generate the .json file name based on MD5
-            File outputFile = new File("/tmp/embeddings/" + md5Hash + ".json");
+            File outputFile = new File(args[0]+"/" + md5Hash + ".json");
 
             // Save as JSON
             ObjectMapper mapper = new ObjectMapper();
