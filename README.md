@@ -1,5 +1,7 @@
 # 🚀 Java Sentence-Bert Embedding & RAG Engine
 
+![image](https://github.com/user-attachments/assets/d97448a4-1e77-456f-9d52-ebb24ccd0b16)
+
 Welcome to the **Java ONNX Embedding & Retrieval-Augmented Generation (RAG) Engine**! This project showcases how to integrate modern AI models with legacy Java systems using **ONNX**. While most AI development today happens in **Python**, many enterprises still rely heavily on Java ecosystems. This solution bridges that gap, allowing seamless **embedding generation** and **document retrieval** using popular transformer models.
 This code/library was first developed for the InfiniteStack of SciCrop and is now open-sourced as a SciCrop Academy initiative.
 
