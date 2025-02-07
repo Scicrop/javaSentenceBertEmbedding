@@ -18,13 +18,13 @@ public class MpnetDataEmbedd {
 
     public static void main(String[] args) throws IOException, TranslateException, ModelNotFoundException, MalformedModelException {
         if (args.length < 2) {
-            System.err.println("Usage: java -jar MpnetDataEmbedd.jar \"folder_with_text_to_embedd\" \"folder_with_onnx_model\" ");
+            System.err.println("Usage: java -jar MpnetDataEmbedd.jar \"folder_with_text_to_embedd\" \"folder_with_embeddings\" \"folder_with_onnx_model\" ");
             System.exit(1);
         }
 
         // Paths to the model and vocabulary
-        String modelPath = args[1] + "/model.onnx";
-        String vocabPath = args[1] + "/vocab.txt";
+        String modelPath = args[2] + "/model.onnx";
+        String vocabPath = args[2] + "/vocab.txt";
 
         // Instantiate the embedding engine
         MpnetEmbeddingEngine engine = new MpnetEmbeddingEngine(
@@ -48,7 +48,7 @@ public class MpnetDataEmbedd {
             EmbeddingJson embeddingJson = new EmbeddingJson(fileName, embedding);
 
             // Generate the .json file name based on MD5
-            File outputFile = new File("/tmp/embeddings/" + md5Hash + ".json");
+            File outputFile = new File(args[1]+"/" + md5Hash + ".json");
 
             // Save as JSON
             ObjectMapper mapper = new ObjectMapper();

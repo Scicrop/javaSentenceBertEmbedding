@@ -18,7 +18,7 @@ public class BertDataEmbedd {
 
     public static void main(String[] args) throws IOException, TranslateException, ModelNotFoundException, MalformedModelException {
         if (args.length < 2) {
-            System.err.println("Usage: java -jar BertDataEmbedd.jar \"folder_with_text_to_embedd\" \"folder_with_onnx_model\" ");
+            System.err.println("Usage: java -jar BertDataEmbedd.jar \"folder_with_text_to_embedd\" \"folder_with_embeddings\" \"folder_with_onnx_model\" ");
             System.exit(1);
         }
 
@@ -48,7 +48,7 @@ public class BertDataEmbedd {
             EmbeddingJson embeddingJson = new EmbeddingJson(fileName, embedding);
 
             // Generate the .json file name based on MD5
-            File outputFile = new File(args[0]+"/" + md5Hash + ".json");
+            File outputFile = new File(args[1]+"/" + md5Hash + ".json");
 
             // Save as JSON
             ObjectMapper mapper = new ObjectMapper();

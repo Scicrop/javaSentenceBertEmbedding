@@ -76,13 +76,13 @@ $ mvn clean install
 
 ### 1. 📄 Generate Embeddings for Documents
 
-Place your text files in a directory (e.g., `/tmp/texts/`). Then run:
+Place your text files in a directory (e.g., `/tmp/sources/`). Then run:
 ```bash
 # For BERT embeddings
-$ java -jar target/BertDataEmbedd.jar /tmp/embeddings/ /opt/infinitestack/onnx_bert/
+$ java -jar target/BertDataEmbedd.jar /tmp/sources /tmp/embeddings/ /opt/infinitestack/onnx_bert/
 
 # For Sentence-BERT embeddings
-$ java -jar target/MpnetDataEmbedd.jar /tmp/embeddings/ /opt/infinitestack/onnx_mpnet/
+$ java -jar target/MpnetDataEmbedd.jar /tmp/sources /tmp/embeddings/ /opt/infinitestack/onnx_mpnet/
 ```
 
 In the above commands embeddings will be saved as `.json` files in `/tmp/embeddings/`.
