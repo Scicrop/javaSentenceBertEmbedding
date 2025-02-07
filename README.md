@@ -1,4 +1,4 @@
-![Java](https://img.shields.io/badge/Java-17-orange) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) ![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/josedamico)
+![Java](https://img.shields.io/badge/Java-17-orange) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) ![X (formerly Twitter) Follow(https://x.com/josedamico)](https://img.shields.io/twitter/follow/josedamico)
 # ☕ Java Sentence-Bert Embedding & RAG Engine
 
 ![image](https://github.com/user-attachments/assets/d97448a4-1e77-456f-9d52-ebb24ccd0b16)
